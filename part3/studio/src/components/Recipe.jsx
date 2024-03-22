@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://www.brianlagerstrom.com/recipes/the-absolute-best-chocolate-chip-cookies";
+   let authorPhoto = "https://images.squarespace-cdn.com/content/v1/62227f3fe1583d580047c391/a3211104-0992-4b2b-8f96-6f253ac26bbf/Brian_Lauren__0028+layers+for+squarespace.png?format=2500w";
+   let authorName = "Brian Lagerstrom";
 
    return (
       <div>
@@ -17,7 +17,17 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = [
+      "butter",
+      "sugar",
+      "eggs",
+      "vanilla",
+      "chocolate",
+      "flour",
+      "baking soda",
+      "baking powder",
+      "salt",
+   ];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -27,6 +37,10 @@ const RecipeIngredients = () => {
             <li>{ingredients[2]}</li>
             <li>{ingredients[3]}</li>
             <li>{ingredients[4]}</li>
+            <li>{ingredients[5]}</li>
+            <li>{ingredients[6]}</li>
+            <li>{ingredients[7]}</li>
+            <li>{ingredients[8]}</li>
          </ul>
       </div>
    );
@@ -36,8 +50,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>The Absolute Best Chocolate Chip Cookies</h1>
+            <p>Delicious cookies!</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -49,7 +63,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://images.squarespace-cdn.com/content/v1/62227f3fe1583d580047c391/597ff8c4-ef8f-4add-ac6d-a4df9dfc04bb/chocolage_chip_cookie.jpeg?format=2500w" alt="Chocolate Chip Cookie" className="imageUpdates"/>
    );
 }
 
